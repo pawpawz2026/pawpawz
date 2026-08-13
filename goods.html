@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="announcement-bar">✦ PAWPAZ GOODS · COMING SOON ✦</div>
+  <div class="announcement-bar">✦ MELLOW MIMI GOODS · 5 ITEMS ✦</div>
   <header class="site-header">
     <a class="brand" href="index.html"><span class="brand-mark">P</span><span><strong>PAWPAWZ</strong><small>character goods & story</small></span></a>
     <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-nav">☰</button>
@@ -15,10 +15,26 @@
     <div class="header-actions"><a href="goods.html">🛍</a><a href="index.html#newsletter">♡</a></div>
   </header>
   <main>
-    <section class="page-title page-shell"><p class="eyebrow">GOODS</p><h1>굿즈</h1><p>실제 상품 이미지를 준비하는 대로 이 영역에 하나씩 추가할 수 있습니다.</p></section>
+    <section class="page-title page-shell"><p class="eyebrow">GOODS</p><h1>굿즈</h1><p>차분하고 포근한 멜로우미미의 세계를 일상으로 가져오는 첫 번째 굿즈 컬렉션입니다. 상품을 누르면 상세 확인과 구매 버튼을 사용할 수 있습니다.</p></section>
     <section class="section page-shell"><div id="goods-list" class="goods-page-grid"></div></section>
   </main>
   <footer class="site-footer"><div class="page-shell footer-inner"><div><strong>PAWPAWZ</strong><p>character goods & story</p></div><nav class="footer-links"><a href="index.html">Home</a><a href="characters.html">Characters</a><a href="series.html">Series</a><a href="story.html">Story</a><a href="news.html">News</a></nav><p class="footer-note">© 2026 PAWPAZ.</p></div></footer>
   <script src="js/script.js" defer></script>
+
+<div class="purchase-modal" id="purchase-modal" aria-hidden="true">
+  <div class="purchase-backdrop" data-modal-close></div>
+  <div class="purchase-dialog" role="dialog" aria-modal="true" aria-labelledby="purchase-title">
+    <button class="modal-close" type="button" data-modal-close aria-label="닫기">×</button>
+    <div class="purchase-dialog-image"><img id="purchase-image" src="" alt="" /></div>
+    <div class="purchase-dialog-copy">
+      <span class="mini-label">MELLOW MIMI GOODS</span>
+      <h2 id="purchase-title">상품명</h2>
+      <span class="goods-status" id="purchase-status">판매 준비 중</span>
+      <p id="purchase-message"></p>
+      <button class="button button-primary purchase-confirm" type="button" data-modal-close>확인</button>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
